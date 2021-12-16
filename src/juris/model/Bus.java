@@ -1,12 +1,23 @@
 package juris.model;
 
-import java.util.ArrayList;
-
 public class Bus extends Transport{
+
+    /**
+     * count of passenger seats in the bus
+     */
     int passengerSeats;
 
-    public Bus(String brand, String number, String fuelType, double fuelConsumption100km, int averageMileageDay, int passengerSeats) {
-        super(brand, number, fuelType, fuelConsumption100km, averageMileageDay);
+    public Bus(String brand,
+               String licensePlateNr,
+               String fuelType,
+               double fuelConsumption100km,
+               int averageMileageDay,
+               int passengerSeats) {
+        super(brand,
+                licensePlateNr,
+                fuelType,
+                fuelConsumption100km,
+                averageMileageDay);
         this.passengerSeats = passengerSeats;
     }
 }

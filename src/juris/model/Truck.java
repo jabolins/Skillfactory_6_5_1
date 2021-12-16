@@ -1,12 +1,22 @@
 package juris.model;
 
-import java.util.ArrayList;
-
 public class Truck extends Transport{
+    /**
+     * maximum load capacity in kilograms
+     */
     int loadCapacity;
 
-    public Truck(String brand, String number, String fuelType, double fuelConsumption100km, int averageMileageDay, int loadCapacity) {
-        super(brand, number, fuelType, fuelConsumption100km, averageMileageDay);
+    public Truck(String brand,
+                 String licensePlateNr,
+                 String fuelType,
+                 double fuelConsumption100km,
+                 int averageMileageDay,
+                 int loadCapacity) {
+        super(brand,
+                licensePlateNr,
+                fuelType,
+                fuelConsumption100km,
+                averageMileageDay);
         this.loadCapacity = loadCapacity;
     }
 }
